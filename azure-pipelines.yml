@@ -26,3 +26,8 @@ steps:
     Contents: '**/.war'
     ArtifactName: 'Mazhar'
     ArtifactType: 'Container'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'mazhar'
+    publishLocation: 'Container'
