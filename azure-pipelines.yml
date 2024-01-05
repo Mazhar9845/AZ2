@@ -21,6 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 - task: CopyFiles@2
-      inputs:
-        Contents: '**/surefire-reports/TEST-*.xml'
-        TargetFolder: '$(build.artifactstagingdirectory)'
+  inputs:
+    Contents: '**/surefire-reports/TEST-*.xml'
+    TargetFolder: '$(build.artifactstagingdirectory)'
