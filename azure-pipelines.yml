@@ -23,7 +23,7 @@ steps:
 - task: CopyPublishBuildArtifacts@1
   inputs:
     CopyRoot: '$(Agent.BuildDirectory)'
-    Contents: '$(Build.SourcesDirectory)/.war'
+    Contents: '$(Build.SourcesDirectory)/war'
     ArtifactName: 'Mazhar'
     ArtifactType: 'Container'
 - task: PublishBuildArtifacts@1
